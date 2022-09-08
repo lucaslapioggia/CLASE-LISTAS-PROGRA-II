@@ -17,7 +17,7 @@ typedef struct nodoL
 {
     Persona dato;
     struct nodoL* siguiente;
-}
+}nodoL;
 
 int main()
 {
