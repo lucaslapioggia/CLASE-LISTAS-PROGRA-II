@@ -6,6 +6,7 @@
 void mostrarListaL(nodo* lista);
 nodoL* agregarAlFinal(nodoL*lista, nodoL* nuevo);
 nodoL*buscarUltimoL(nodoL*lista);
+Persona cargarPersonaL();
 
 typedef struct
 {
@@ -23,6 +24,19 @@ int main()
 {
 
     return 0;
+}
+
+Persona cargarPersonaL()
+{
+  Persona aux;
+    printf("Ingrese el nombre\n");
+    fflush(stdin);
+    gets(aux.nombre);
+    printf("Ingrese la edad\n");
+    scanf("%d",&aux.edad);
+    
+    return aux;
+
 }
 /*
 void mostrarPersonaL(Persona dato)
